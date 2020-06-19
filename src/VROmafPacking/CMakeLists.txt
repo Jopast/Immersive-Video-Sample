@@ -5,7 +5,7 @@ project(VROmafPacking)
 AUX_SOURCE_DIRECTORY(. DIR_SRC)
 AUX_SOURCE_DIRECTORY(../utils/ UTIL_SRC)
 
-ADD_DEFINITIONS("-g -c -fPIC -lglog -std=c++11 -D_GLIBCXX_USE_CXX11_ABI=0 -z noexecstack -z relro -z now -fstack-protector-strong -fPIE -fPIC -pie -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Wl,-S -Wall -Werror")
+ADD_DEFINITIONS("-g -c -fPIC -lglog -std=c++11 -D_GLIBCXX_USE_CXX11_ABI=0 -z noexecstack -z relro -z now -fstack-protector-strong -fPIE -fPIC -pie -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Wl,-S -Wall")
 
 INCLUDE_DIRECTORIES(/usr/local/include ../utils ../360SCVP)
 LINK_DIRECTORIES(/usr/local/lib)
