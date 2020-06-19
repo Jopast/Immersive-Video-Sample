@@ -48,7 +48,7 @@ install_tools() {
     if [ "$os" == \""Ubuntu"\" ];then
         sudo apt-get install libgmp-dev libmpfr-dev mpc libmpc-dev patch autoconf libtool automake libssl-dev libevent-dev libcurl4-openssl-dev -y
     elif [ "$os" == \""CentOS Linux"\" ];then
-	sudo yum install gmp gmp-devel mpfr mpfr-devel libmpc libmpc-devel patch autoconf libtool automake libssl-devel libevent-devel.x86_64 openssl-devel libxml2-devel -y
+	sudo yum install gmp gmp-devel mpfr mpfr-devel libmpc libmpc-devel patch autoconf libtool automake libssl-devel libevent-devel.x86_64 openssl-devel libxml2-devel bc -y
     fi
 
     mkdir -p ../build/external && cd ../build/external
